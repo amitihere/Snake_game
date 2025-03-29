@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake-By-Aneesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="score-container">
+            <div id="score">Score: <span id="score-value">0</span></div>
+            <div id="high-score">High Score: <span id="high-score-value">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="controls">
+            <div id="mobile-controls">
+                <button id="up">↑</button>
+                <div class="horizontal-controls">
+                    <button id="left">←</button>
+                    <button id="right">→</button>
+                </div>
+                <button id="down">↓</button>
+            </div>
+        </div>
+        <div id="start-screen">
+            <h1>Modern Snake</h1>
+            <button id="start-button">Start Game</button>
+            <div class="instructions">
+                <p>Use arrow keys or buttons to control the snake</p>
+                <p>Collect food to grow and earn points</p>
+                <p>Avoid walls and yourself!</p>
+            </div>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
